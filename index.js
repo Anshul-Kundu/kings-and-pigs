@@ -4,12 +4,14 @@ const canvas=document.querySelector('canvas')
     canvas.width=1024
     canvas.height=576
 
-    const player = new Player()
 
    
 
 const parsedCollisions = collisionsLevel1.parse2D()
 const collisionBlocks=parsedCollisions.createObjectsFrom2D()
+
+
+const player = new Player({collisionBlocks})
 
     const backgroundLevel1=new Sprite({
         position:{
