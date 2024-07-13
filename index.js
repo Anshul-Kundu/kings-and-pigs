@@ -6,7 +6,10 @@ const canvas=document.querySelector('canvas')
 
     const player = new Player()
 
+   
 
+const parsedCollisions = collisionsLevel1.parse2D()
+const collisionBlocks=parsedCollisions.createObjectsFrom2D()
 
     const backgroundLevel1=new Sprite({
         position:{
@@ -21,6 +24,9 @@ const canvas=document.querySelector('canvas')
     function animate(){
 
         backgroundLevel1.draw()
+        collisionBlocks.forEach(collisionBlocks=>{
+            collisionBlocks.draw()
+        })
 
         player.velocity.x=0
         if(keys.a.pressed) player.velocity.x=-5
