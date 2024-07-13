@@ -29,13 +29,9 @@ class Player{
     update(){
 
         this.position.x+=this.velocity.x
-        //check horizontal collision
+
         this.checkForHorizontalCollisions()
-
-
-        //apply gravity
         this.applyGravity()
-        //check vertical collision
         this.checkForVerticalCollisions()
         
     }
