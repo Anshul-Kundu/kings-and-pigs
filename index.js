@@ -11,7 +11,10 @@ const parsedCollisions = collisionsLevel1.parse2D()
 const collisionBlocks=parsedCollisions.createObjectsFrom2D()
 
 
-const player = new Player({collisionBlocks})
+const player = new Player({collisionBlocks,
+    imageSrc:'./img/king/idle.png',
+    frameRate:11
+})
 
     const backgroundLevel1=new Sprite({
         position:{
