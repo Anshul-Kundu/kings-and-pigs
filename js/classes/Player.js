@@ -57,6 +57,7 @@ class Player extends Sprite{
         }
     }
 
+    
     checkForVerticalCollisions(){
         for(let i=0; i<this.collisionBlocks.length;i++){
             const collisionBlock =this.collisionBlocks[i]
