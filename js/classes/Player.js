@@ -2,9 +2,10 @@ class Player extends Sprite{
     constructor({
         collisionBlocks=[],
         imageSrc,
-        frameRate
+        frameRate,
+        animations
     }){
-        super({imgSrc:imageSrc,frameRate})
+        super({imgSrc:imageSrc,frameRate,animations})
         this.position={
             x:200,
             y:200
